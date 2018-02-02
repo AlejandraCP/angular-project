@@ -8,8 +8,12 @@
   </h2>
   <!-- <img width="300" alt="Angular Logo" src=> -->
   <div>
-    <button [disabled]="!listo">Click me</button>
+    <button [disabled]="!listo" (click)='hacerAlgo()'>Click me</button>
   </div>
+  <hr>
+  <input type="text" placeholder='tu nombre' [(ngModel)]="nombre">
+  <br>
+  <p>Mi nombre es {{nombre}}</p>
 </div>
 
 
