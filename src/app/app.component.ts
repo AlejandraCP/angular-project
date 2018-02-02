@@ -14,12 +14,18 @@ export class AppComponent {
   nombre:string = '';
   apellido:string = '';
   lugares:any = [
-    {active: true,
+    {cercania: 1, distancia: 1, active: true,
       nombre: 'Florería La Gardenia'},
-    {active: true,
+    {cercania: 2, distancia: 10, active: true,
       nombre: 'Donas La Pasadita'},
-    {active: false,
-      nombre: 'Veterinaria Huellitas'}
+    {cercania: 1, distancia: 8, active: false,
+      nombre: 'Veterinaria Huellitas'},
+    {cercania: 1, distancia: 40, active: true,
+      nombre: 'Pollería Pechugita'},
+    {cercania: 2, distancia: 120, active: true,
+      nombre: 'Joyería Golden'},
+    {cercania: 3, distancia: 18, active: false,
+      nombre: 'Karaoke Mouth'}
   ];
   users:any = [
     {older: true,
