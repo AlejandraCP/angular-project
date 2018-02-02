@@ -21,16 +21,17 @@ export class AppComponent {
     {active: false,
       nombre: 'Veterinaria Huellitas'}
   ];
+  users:any = [
+    {older: true,
+      nombre: 'Juana'},
+    {older: true,
+      nombre: 'Carolina'},
+    {older: false,
+      nombre: 'Juan Carlos'}
+  ];
   lat:number = -11.9951899;
   lng:number = -77.0700;
 // this es la clase
   constructor() {
-//     setTimeout(() => {this.listo = true; }, 3000);
-//   }
-// // event binding
-//   hacerAlgo() {
-//     alert('hey');
-//     console.log('diste click');
-//   }
 
 }
