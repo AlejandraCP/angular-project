@@ -6,14 +6,18 @@ import { AppComponent } from './app.component';
 import { FormsModule} from '@angular/forms';
 
 import { AgmCoreModule } from '@agm/core';
+import { ResaltarDirective} from './directives/resaltar.directives';
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+      ResaltarDirective
+  ],
   imports: [
     BrowserModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      // este modulo per
       apiKey: 'AIzaSyACsyApGJvlwMN_Cn5hwTYkQX0GAaQ-1qQ'
     })
   ],
