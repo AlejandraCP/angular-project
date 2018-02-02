@@ -5,15 +5,19 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule} from '@angular/forms';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AgmCoreModule.forRoot({
+      // este modulo per
+      apiKey: 'AIzaSyACsyApGJvlwMN_Cn5hwTYkQX0GAaQ-1qQ'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

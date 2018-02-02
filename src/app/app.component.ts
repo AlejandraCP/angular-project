@@ -21,6 +21,8 @@ export class AppComponent {
     {active: false,
       nombre: 'Veterinaria Huellitas'}
   ];
+  lat:number = -11.9951899;
+  lng:number = -77.0700;
 // this es la clase
   constructor() {
 //     setTimeout(() => {this.listo = true; }, 3000);
